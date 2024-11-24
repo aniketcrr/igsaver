@@ -67,19 +67,8 @@ app.use(
     )
   );
   
-  // Serialize and Deserialize User for Session Handling
-  passport.serializeUser((user, done) => {
-    done(null, user.id);
-  });
   
-  passport.deserializeUser(async (id, done) => {
-    try {
-      const user = await User.findById(id);
-      done(null, user);
-    } catch (err) {
-      done(err);
-    }
-  });
+  
 
 
 
@@ -88,6 +77,11 @@ app.get(
     "/index",
     passport.authenticate("google", { failureRedirect: "/" }),
     (req, res) => {
+        
+  // Serialize and Deserialize User for Session Handling
+  passport.serializeUser((user, done) => {
+    done(null, user.id);
+  });
       // Redirect to the download page after successful login
       return res.render("index");
     }
@@ -112,6 +106,14 @@ app.get("/logout", (req, res) => {
         console.error("Error during logout:", err);
         return res.status(500).send("An error occurred while logging out.");
       }
+        passport.deserializeUser(async (id, done) => {
+    try {
+      const user = await User.findById(id);
+      done(null, user);
+    } catch (err) {
+      done(err);
+    }
+  });
       req.session.destroy(() => {
         // Redirect to home or login page after logout
         res.redirect("/");
