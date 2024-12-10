@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram Video Saver</title>
+    <script src="https://kit.fontawesome.com/b12715ab6c.js"crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+   
+  </head>
+  <body>
+  
+    <header>
+      <div class="navbar">
+        <div class="logo"><img src="image/loogo.png" /></div>
+        <div class="links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#tools">Tools</a></li>
+          <li><a href="#contacts">Contact</a></li>
+          <li><a href="/logout">Logout</a></li>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <div id="hero" class="hero" >
+        <div class="left">
+          <img src="image/bg1.png" />
+        </div>
+        <div class="right">
+          <div class="info">
+            <h1>Instagram Downloader</h1>
+            <p>Download Photos, Reels, Videos, IGTV & carousel</p>
+            <form method="GET" action='/download' class="ig-links">
+              <input name="url" type="text" placeholder="Insert Instagram link Here" required />
+              <button type="submit">Download</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about  gradient-bg"> 
+        <div class="container">
+           <h1>HOW TO DOWNLOAD FROM INSTAGRAM?</h1>
+           <p>You must follow these three easy steps to download photos, videos, and reels from Instagram. See their description below.<p>
+
+           <div class="cards">
+            <div class="card">
+                <div class="number">1</div>
+                <h2>Copy the URL</h2>
+                <p>Open the Instagram application or website, and copy the URL of the  video.</p>
+                <button class="outline-btn">More</button>
+            </div>
+            <div class="card">
+                <div class="number">2</div>
+                <h2>Paste the link</h2>
+                <p>Go back to <a href="#hero">ig.Gram</a>,paste the link into the field and click the Download button</p>
+                <button class="outline-btn">More</button>
+            </div>
+            <div class="card">
+                <div class="number">3</div>
+                <h2>Select quality</h2>
+                <p>Resolution = Pixel width x Pixel height 640 x 360 (or 360p)
+                  640 x 480 (or 480p)</p>
+                <button class="outline-btn">More</button>
+            </div>
+            <div class="card">
+                <div class="number">4</div>
+                <h2>Download</h2>
+                <p>Quickly you will get the results with several quality options. Download what fits your needs.</p>
+                <button class="outline-btn">More</button>
+            </div>
+           </div>
+        </div>
+
+    </section>
+
+    <section id="tools" class="tools-ig">
+    <div class="container">
+      <div class="left">
+        <h1>Try For Free</h1>
+        <ul>
+          <li>1. Original resolution and quality to save videos.</li>
+          <li>2. Quick Instagram Saver: one click to download.</li>
+          <li>3. High-speed & fastest download available.</li>
+          <li>4. Support to download videos and stories.</li>
+          <li>5. No need to login Instagram account.</li>
+        </ul>
+        <button class="filled-btn">Read More</button>
+      </div>
+      <div class="right">
+        <video autoplay loop muted plays-inline>
+          <source src="image/VIDEO.mp4">
+        </video>
+      </div>
+    
+     </div>
+
+    </section>
+
+    <section id="Contacts" class="contacts gradient-bg">
+      <div class="container">
+        <div class="left">
+         <img src="image/png.png">
+         </div>
+        <div class="right">
+          <form>
+            <h1>LEAVE A MESSAGE</h1>
+
+            <div class="input-group">
+              <label for="name">Name</label>
+              <input 
+               id="name"
+               type="text"
+               class="input" 
+               placeholder="Enter Your Name">
+            </div>
+
+            <div class="input-group">
+              <label for="email">Email</label>
+              <input 
+               id="email"
+               type="email"
+               required
+               class="input" 
+               placeholder="Enter Your valid email">
+            </div>
+
+            <div class="input-group">
+              <label for="message">Message</label>
+              <textarea 
+               id="message"
+               class="input" 
+               placeholder="Enter Your Message"
+               rows="5"
+               ></textarea>
+            </div>
+            <div class="btn-B">
+              <button class="filled-btn"> Submit your Request</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer">
+      <div class="footer">
+        <div class="col-1">
+          <h3>USEFUL LINKS</h3>
+          <a href="#">About Us</a>
+          <a href="#">Disclaimer</a>
+          <a href="#">Privacy policy</a>
+          <a href="#">Support</a>
+          <a href="#">Terms of Service</a>
+        </div>
+        <div class="col-2">
+          <h3>SOCIAL LINKS</h3>
+          <a href="#">Facebook</a>
+          <a href="#">Instagram</a>
+          <a href="#">Linked In</a>
+          <a href="#">Twitter</a>
+          <a href="#">Bing.co</a>
+        </div>
+    </footer>
+
+    <div class="copyright">
+      <h2>Copyright © 2023
+        IGram.co is not endorsed or certified by Instagram. All Instagram.TM logos and trademarks displayed on this application are property of Instagram. Service provider</h2>
+    </div>
+
+  </body>
+</html>

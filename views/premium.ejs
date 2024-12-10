@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instasaver - Subscription</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom right, #1f2937, #623d99, #eb2c5a);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 1rem;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 28rem;
+    }
+
+    .title {
+      font-size: 2.5rem;
+      font-weight: bold;
+      text-align: center;
+      background: linear-gradient(to right, #fff, #d1d5db);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 2rem;
+    }
+
+    .card {
+      background-color: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(12px);
+      border-radius: 1rem;
+      overflow: hidden;
+    }
+
+    .card-header {
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    .card-title {
+      font-size: 1.75rem;
+      font-weight: bold;
+    }
+
+    .card-description {
+      font-size: 1.125rem;
+      font-weight: 300;
+      margin-top: 0.5rem;
+    }
+
+    .card-content {
+      padding: 1.5rem;
+      space-y-4: 1rem;
+    }
+
+    .price {
+      font-size: 3rem;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+    }
+
+    .price-period {
+      font-size: 1.25rem;
+      margin-left: 0.5rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .feature-list {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      space-y-2: 0.5rem;
+    }
+
+    .feature-item {
+      display: flex;
+      align-items: center;
+    }
+
+    .feature-item-icon {
+      width: 1.25rem;
+      height: 1.25rem;
+      margin-right: 0.5rem;
+    }
+
+    .card-footer {
+      padding: 1.5rem;
+    }
+
+    .subscribe-button {
+      width: 100%;
+      background: linear-gradient(to right, #eb2c5a, #623d99);
+      color: #fff;
+      border: none;
+      border-radius: 9999px;
+      padding: 1rem 1.5rem;
+      font-size: 1rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background 0.3s ease-in-out;
+    }
+
+    .subscribe-button:hover {
+      background: linear-gradient(to right, #623d99, #eb2c5a);
+    }
+
+    .terms {
+      text-align: center;
+      font-size: 0.875rem;
+      color: #d1d5db;
+      margin-top: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Upgrade to Instasaver</h1>
+    <div class="card">
+      <div class="card-header">
+        <h2 class="card-title">Premium Plan</h2>
+        <p class="card-description">Enhance your Instagram downloading experience</p>
+      </div>
+      <div class="card-content">
+        <div class="price">
+          <span>₹49</span>
+          <span class="price-period">/month</span>
+        </div>
+        <ul class="feature-list">
+          <li class="feature-item">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="feature-item-icon text-green-500">
+              <path fill-rule="evenodd" d="M19.916 4.626a.75.75 0 01.134 1.051l-9 13.5a.75.75 0 01-1.175.111l-6-6a.75.75 0 011.06-1.06l5.353 5.353 8.493-12.739a.75.75 0 011.051-.134z" clip-rule="evenodd" />
+            </svg>
+            <span>No advertisements</span>
+          </li>
+          <li class="feature-item">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="feature-item-icon text-green-500">
+              <path fill-rule="evenodd" d="M19.916 4.626a.75.75 0 01.134 1.051l-9 13.5a.75.75 0 01-1.175.111l-6-6a.75.75 0 011.06-1.06l5.353 5.353 8.493-12.739a.75.75 0 011.051-.134z" clip-rule="evenodd" />
+            </svg>
+            <span>Unlimited downloads</span>
+          </li>
+          <li class="feature-item">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="feature-item-icon text-green-500">
+              <path fill-rule="evenodd" d="M19.916 4.626a.75.75 0 01.134 1.051l-9 13.5a.75.75 0 01-1.175.111l-6-6a.75.75 0 011.06-1.06l5.353 5.353 8.493-12.739a.75.75 0 011.051-.134z" clip-rule="evenodd" />
+            </svg>
+            <span>Faster download speeds</span>
+          </li>
+          <li class="feature-item">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="feature-item-icon text-green-500">
+              <path fill-rule="evenodd" d="M19.916 4.626a.75.75 0 01.134 1.051l-9 13.5a.75.75 0 01-1.175.111l-6-6a.75.75 0 011.06-1.06l5.353 5.353 8.493-12.739a.75.75 0 011.051-.134z" clip-rule="evenodd" />
+            </svg>
+            <span>Priority support</span>
+          </li>
+        </ul>
+      </div>
+      <div class="card-footer">
+    <form method="get" action='/buy-premium' >
+        <button class="subscribe-button">Subscribe Now</button>
+        </form>
+      </div>
+    </div>
+    <p class="terms">By subscribing, you agree to our Terms of Service and Privacy Policy</p>
+  </div>
+</body>
+</html>
