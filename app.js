@@ -58,7 +58,7 @@ app.use(
       {
         clientID: process.env.CLIENT_ID,
         clientSecret: process.env.CLIENT_SECRET,
-        callbackURL: "http://localhost:3000/auth/google/redirect", // Ensure this matches Google Cloud Console
+        callbackURL: "https://igsaver.onrender.com/auth/google/redirect", // Ensure this matches Google Cloud Console
       },
       async (accessToken, refreshToken, profile, done) => {
         try {
